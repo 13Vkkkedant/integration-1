@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header: Pizza Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pizza_image"
+            android:scaleType="centerCrop"/>
+
+        <!-- Section: Size -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Pizza size dropdown -->
+        <Spinner
+            android:id="@+id/spinner_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pizza_sizes"
+            android:prompt="@string/select_size"/>
+
+        <!-- Section: Crust Type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crust Type"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Selection of Pizza base -->
+        <Spinner
+            android:id="@+id/spinner_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pizza_bases"
+            android:prompt="@string/select_base"/>
+
+        <!-- Section: Quantity -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Number of Pizzas -->
+        <EditText
+            android:id="@+id/et_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_quantity"
+            android:inputType="number"/>
+
+        <!-- Section: Toppings -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toppings"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Topping options -->
+        <CheckBox
+            android:id="@+id/chk_pepperoni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/topping_pepperoni"/>
+        <CheckBox
+            android:id="@+id/chk_mushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/topping_mushroom"/>
+
+        <!-- Section: Spice Level -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spice Level"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Spice level -->
+        <SeekBar
+            android:id="@+id/seekbar_spice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"/>
+
+        <!-- Section: Side Dressing -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Side Dressing"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Side Dressing -->
+        <RadioGroup
+            android:id="@+id/radio_group_dressing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dressing_none"/>
+            <RadioButton
+                android:id="@+id/radio_ranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dressing_ranch"/>
+        </RadioGroup>
+
+        <!-- Section: Delivery or Pickup -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery or Pickup"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Delivery or Pickup -->
+        <RadioGroup
+            android:id="@+id/radio_group_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery"/>
+            <RadioButton
+                android:id="@+id/radio_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pickup"/>
+
+        </RadioGroup>
+
+        <!-- Section: Customer Details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Name, Address & Phone number for delivery -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"/>
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_address"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_phone"
+            android:inputType="phone"/>
+
+        <TextView
+            android:id="@+id/tv_order_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_total"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:gravity="center"/>
+
+        <!-- Place order and reset buttons -->
+        <Button
+            android:id="@+id/btn_place_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_order"/>
+
+        <Button
+            android:id="@+id/btn_reset_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_order"/>
+
+    </LinearLayout>
+
+</ScrollView>

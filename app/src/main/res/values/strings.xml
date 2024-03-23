@@ -1,0 +1,60 @@
+<resources>
+    <!-- Pizza Sizes -->
+    <string name="size_small">Small</string>
+    <string name="size_medium">Medium</string>
+    <string name="size_large">Large</string>
+    <string name="base_thin_crust">Thin Crust</string>
+    <string name="base_deep_dish">Deep Dish</string>
+    <string name="app_name">pizza_app</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="splash_image_description">Pizza App</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="edit_order">Edit Order</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="select_size">Select Pizza Size</string>
+    <string name="order_total">Order Total: $%s</string>
+    <string-array name="pizza_sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string name="select_base">Select Pizza Base</string>
+    <string-array name="pizza_bases">
+        <item>Thin Crust</item>
+        <item>Regular Crust</item>
+        <item>Deep Dish</item>
+    </string-array>
+    <string name="enter_quantity">Enter Quantity</string>
+    <string name="topping_pepperoni">Pepperoni</string>
+    <string name="topping_mushroom">Mushroom</string>
+    <!-- Add more topping strings as needed -->
+    <string name="dressing_none">None</string>
+    <string name="dressing_ranch">Ranch</string>
+    <!-- Add more dressing strings as needed -->
+    <string name="delivery">Delivery</string>
+    <string name="pickup">Pickup</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_phone">Enter Phone Number</string>
+    <string name="place_order">Place Order</string>
+    <string name="reset_order">Reset Order</string>
+    <!-- Order summary title -->
+
+    <!-- Order detail labels -->
+    <string name="order_detail_label">Order Detail:</string>
+    <string name="order_detail_value">%s</string>
+    <color name="light_gray">#D3D3D3</color>
+    <!-- Add more order detail labels as needed -->
+
+    <!-- Order total label -->
+    <string name="order_total_label">Total:</string>
+
+    <!-- Order Summary Screen -->
+    <string name="order_summary_title">Order Summary</string>
+
+
+</resources>
